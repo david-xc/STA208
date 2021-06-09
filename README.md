@@ -6,7 +6,7 @@ This project mainly utilizes computer vision model to resolve foliar (leaf) dise
 
 ## How to read this project?
 
-* We recommend to open `report.pdf` first. Every section in the report introduces a model for fine-grained classification or a data process step. A folder with the same name as the section includes the corresponding codes or jupyter notebooks of that section. In each folder of a section, a independent readme is given to introduce the code and jupyter notebook files in this folder and show you how to run them. 
+* We recommend open `report.pdf` first and check the code or notebooks section by section. Every section in the report introduces a model for fine-grained classification or a data process step. These sections are quite independent and some of them are relatively complicated. To make the project easier to understand, the code and notebooks of each section are saved in a folder with the name of the section. In each folder of a section, an independent readme is given to introduce the code and jupyter notebook files in this folder and show you how to run them.
 
 ## File Directory Description
 
