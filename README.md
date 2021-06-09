@@ -2,11 +2,7 @@
 
 ## Abstract
 
-We explore the potential of creating new recipes via text data. Our goal has two folds. First, we aim to classify the cuisine based on ingredients. Second, we want to predict an ingredient that is missing from a given list of ingredients and a cuisine name. The first task can be formulated as a multi-class classification problem.  To convert the text into numerical signals, we can use TFIDF vectorizer, Countvectorizer,  word embedding based on Word2Vec model. We are able to achieve 0.85 micro-averaged F1 scores for the multi-classification task with multilayer perceptrons and bag-of-words model. 
-
-For the first task, we compare several well-known classification algorithms such as logistic regression, naive bayes, linear discriminant analysis, decision tree classifier, random forest, Adaboost, multi-layer perceptrons. We conduct grid search with 5-fold stratified cross-validation for hyperparameter tuning.
-
-For the second task, we adopt two approaches to process the recipe text, which is the key to the recommender system. We first explore the recommended ingredients based on similarity to the given recipe using vectorizers; and then we examine the performance, in terms of the "top n accuracy" metric, of a baseline popularity model and a sophiticated collaborative filtering model under the `text_preprocess` method.
+This project mainly utilizes computer vision model to resolve foliar (leaf) diseases which poses a major threat to the overall productivity and quality of apple orchards. The anticipated issues is post on the challenge of Plant Pathology 2021 - FGVC8, and is regarded as a fine-grain classification problem. In this report, we demonstrate a series of exploration including data preprocessing, data augmentation and comparison among various state-of-the-art deep learning algorithm. We get a conclusion that attention learning with generative data augmentation will lead to an outstanding performance.
 
 ## How to read this project?
 
