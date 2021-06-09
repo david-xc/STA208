@@ -10,7 +10,7 @@ For the second task, we adopt two approaches to process the recipe text, which i
 
 ## How to read this project?
 
-* We recommend to open `report.pdf` along with the notebooks listed below. The report details the methods and provides the results along with insights we gained. The notebooks contain some visualizations that may not be on the report. Please look at the `code` folder for any details about the code.
+* We recommend to open `report.pdf` first. Every chapeter in the report introduces a model for fine-grained classification or a data process step. A folder with the same name as the chapter includes the corresponding codes or jupyter notebooks of that chapter. In each folder of a chapter, a independent readme is given to introduce every code and jupyter notebook file and show you how to run them. 
 
 ## File Directory Description
 
@@ -35,17 +35,17 @@ For the second task, we adopt two approaches to process the recipe text, which i
 
 * `/data/`: this folder stores all data files.
 
-	* `train.json`: this file contains training data for training models.
+	The data we used in this project is on the website "https://www.kaggle.com/c/plant-pathology-2021-fgvc8/data". Since it is larger than 100Mb, we can not put it here due 	to the limit of space.
 
-	* `test.json`: this file contains ingredients for models to predict the cuisines.
-
-* `report.pdf`: this is a writeup to detail everything about this project.
+* `report.pdf`: this is a writeup including all details of problem setting, mainidea of every model, results and conclusion of this final project.
 
 ## How to run the code
 
 For the model CNN ResNet50 and Graph convolutional network, the training steps and performances on testset are given in the corresponding jupyter notebooks, you can directly run the notebooks.
+
 For the EfficientNet model, the training steps and performance performances on testset are given seperately in several jupyter notebooks. You can frist run "Training of EfficientNet.ipynb" for training. Then by running "Performance_EfficientNet_Unbalanced.ipynb" and "Performance_EfficientNet_balanced.ipynb", you can see the performances of the EfficientNet trained with balanced and unbalanced dataset respectively.
-The attention learning part is a bit more complex. Therefore, we have a independent readme in the folder "code\Attention Learning". That readme can clearly show you how to run the code for attention learning.
+
+The attention learning part is a bit more complex. Therefore, we have a independent readme for this part in the folder "code\Attention Learning". That readme can clearly show you how to run the codes of attention learning.
 
 
 ## Authors
