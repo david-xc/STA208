@@ -10,34 +10,72 @@ This project mainly utilizes computer vision model to resolve foliar (leaf) dise
 
 ## File Directory Description
 
-* `/code/`: this folder contains all the python necessarily to run the code in the jupyter notebook.
+* `/Baseline(Section 3)/`: this folder contains all code and notebooks of Section 2.
 	
-	* `model_examiner.py`: this file contains wrapper functions to conduct gridsearch for model parameter tuning, spot-checking, building neural network arhitecture. 
-
-	* `painter.py`: this file contains codes for plotting various graphs such as confusion matrix, f1-micro averaged curve, TSNE and PCA components, horizontal barcharts. It also controls the color palette used for the TSNE and PCA to ensure the colors being used for various cuisines are consistent.
-
-	* `text_preprocess.py`: this file contains codes to preprocess the data for the vectorizers and the word2vec model. `vectorizer_preparation` method (for task 2, approach 1) is also included in this module.
+	* `CNN.ipynb`: this is the notebook for the code and explanations about CNN model(baseline 1).
     
-	* `ingredient_recommendation.py`: this module recommends ingredients based on a list of ingredients. Recommended ingredients will be printed with their recommendation indices in a descending order, meaning ingredients we recommend more will be printed first (task 2, approach 1)
+	* `ResNet.ipynb`: this is the notebook for the code and explanations about ResNet50 model(baseline 2).
+
+* `/Graph ConvNet(Section 4)/`: this folder contains all code and notebooks of Section 2.
+
+	* `Resnet_multilabel_graph.ipynb`: Code and explanations about graph neural networks which model the dependencies between different pathology.
+
+* `/EfficientNet(Section 5)/`: this folder contains all code and notebooks of Section 2.
+	
+  	* `Training of EfficientNet.ipynb`: this is the notebook for the training of the EfficientNet.
     
-	* `RecSys.py`: This modules defines 3 classes, "top n accuracy" method for model evaluation, popularity model for RecSys, and collaborative filtering model for RecSys. The function, `corpus_to_matrix`, that converts the recipe corpus into expanded recipe matrix is included, too (task 2, approach 2).
+  	* `Performance_EfficientNet_Unbalanced.ipynb`: this notebook presents the performance of the EfficientNet trained with the unbalanced data.
+  
+  	* `Performance_EfficientNet_balanced.ipynb`: this notebook presents the performance of the EfficientNet trained with the balanced data.
+  
+* `/Attention learning (Section 6)/`: this folder contains all code and notebooks of Section 2.
+	
+	* `/code/`: This folder contains all the python necessarily to run the Attention learning code in the Colab notebook but please be aware of the ``path`` for loading the dataset and saving the model parameters.
+
+		* `train.py`: It is the main file to run the Attention learning. 
+
+		* `config.py`: This file contains the model parameter setting such as batch size, learning rate, input image size. 
+
+		* `test.py`: This file contains codes for running the testing dataset through an already trained model, which will be saved under the "checkpoint" file. Please change the path of ``root`` for dataset location and ``pth_path`` for well trained mode location.
+
+		* AOLM.py`: Attention Object Location Module (AOLM). This function crops the whole image to the smaller size image based on the higher score of the feature map
+
+		* `auto_load_resume.py`: This function loads the model from the checkpoint for training and testing respectively. We can continuously train the model based on what is already trained if the training is forced to stop.
+
+		* `cal_iou.py`: This function calculates the threshold of activation mean value.	
+
+		* `compute_window_nums.py`: This function compute how many windows are considered for sliding window approach. It is based on the image input size, stride, and the ratio size of the window
+
+		* `eval_model.py`: This function evaluates the training model. The input will be training/testing data and the output will be the F1 score 
+
+		* `indices2coordinates.py`: This function computes the coordination of four parts of images that are clipped from the Object image
+
+		* `read_dataset.py`: This function tells the user that the code is loading the training data or tje testing data or the data is not successfully loaded.
+
+		* `train_model.py`: This function is the integration of the training process and the evaluation of the testing dataset
+
+		* `model.py`: this function is the integration of three main parts of the attention learning: 1) The pretrained ResNet-50; 2) crop the full input images to smaller size images (Objective image) based on the scores of the feature map (AOLM: Attention Object Location Module); 3) the function for further cropping the Objective image to four smaller parts of images. (APPM: Attention Part Proposal Module)	
+
+		* `resnet.py`: This function is for building the ResNet-50.	
 
 
-* `/notebooks/`: this folder contains the main report writeup.
+	* `/notebooks/`: 
 
-	* `Food_cuisine_classification.ipynb`: this is the notebook for the multi-class classification problem to classify various cuisines based on ingredients (task 1).
-    
-	* `ingredient_recommendation.ipynb`: this notebook showcases our two approaches to the recommender system for the ingredient based on a user-specified list of ingredients (i.e. task 2).
+		* `Unbalance sample_Attentionlearning.ipynb`: this is the notebook for the multi-lable  classification problem to classify unbalanced sample through the Attention learning. It shows the process and results of running the "test.py" where the trained model is save in checkpoint
+
+		* `Balance sample_Resampling_Attentionlearning.ipynb`: this is the notebook for the multi-lable  classification problem to classify the balanced sample (augmenting by Data Sampler) through the Attention learning.
+
+
 
 * `/data/`: this folder stores all data files.
 
 	The data we used in this project is on the website "https://www.kaggle.com/c/plant-pathology-2021-fgvc8/data". Since it is larger than 100Mb, we can not put it here due 	to the limit of space.
 
-* `report.pdf`: this is a writeup including all details of problem setting, mainidea of every model, results and conclusion of this final project.
+* `report.pdf`: this is a writeup including all details of problem setting, main idea and performance of every model, and conclusion of this final project.
 
 ## How to run the code
 
-See the independent readme files in each folder.
+Each folder includes the code or notebooks of the corresponding section in the report. See the independent readme files in each folder. Follow the readme, you can successfully run the code or notebooks for any section.
 
 
 ## Authors
