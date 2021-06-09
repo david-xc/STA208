@@ -1,0 +1,18 @@
+# PLANT PATHOLOGY 2021
+
+## Abstract
+This folder includes the implementation notebooks for chapter 3. It has two notebooks which implement the CNN model and ResNet50 model and present the performance of them respectively.
+
+## File Directory Description
+
+	* `CNN.ipynb`: this is the notebook for the code and explanations about CNN model(baseline 1).
+
+    
+	* `ResNet.ipynb`: this is the notebook for the code and explanations about ResNet50 model(baseline 2).
+
+
+## How to run the code
+
+You only need to run the code on the jupyter notebooks. Everything should work fine.
+
+
