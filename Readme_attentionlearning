@@ -1,14 +1,15 @@
 This folder includes the codes and jupyter notebooks of the attention learning (Chapter 6 of the report).
 
+
 ## File Directory Description
 
-* `/code/`: This folder contains all the python necessarily to run the Attention learning code in the Colab notebook but please be aware of the ``path`` for loading the dataset and saving the model parameters.
+* `/code/Attention learning/`: This folder contains all the python necessarily to run the Attention learning code in the Colab notebook but please be aware of the ``path`` for loading the dataset and saving the model parameters.
 	
 	* `train.py`: It is the main file to run the Attention learning. 
 
 	* `config.py`: This file contains the model parameter setting such as batch size, learning rate, input image size. 
 	
-	* `test.py`: This file contains codes for running the testing dataset through an already trained model, which is saved under the "checkpoint" file. Please change the path of ``root`` for dataset location and ``pth_path`` for well trained mode location.
+	* `test.py`: This file contains codes for running the testing dataset through an already trained model, which will be saved under the "checkpoint" file. Please change the path of ``root`` for dataset location and ``pth_path`` for well trained mode location.
 		    
 	* AOLM.py`: Attention Object Location Module (AOLM). This function crops the whole image to the smaller size image based on the higher score of the feature map
     
@@ -53,7 +54,8 @@ This folder includes the codes and jupyter notebooks of the attention learning (
         ** Because the dataset is large so the images are stored in the google drive and the code links Colab to the google drive
 	1)  Please move the training images to the ``images`` folder and also move the train.txt and text.txt under the same path of the ``images folder`` in the google drive.
 	2)  Please be cautious about the path in ``train.py``, ``config.py``, and “dataset.py``. Make sure to correctly copy and paste the path of the images and train/test labels (train.txt and text.txt file). 
-	3) This code will save the model of each epoch to the "checkpoint" folder, where the path is set by the ``model_path`` in the ``config.py``
+	3) This code will save the model of each epoch to the ``checkpoint`` folder, where the path is set by the ``model_path`` in the ``config.py``
 	4) The attention learning is based on the pretrained model of ResNet-50 ( you can download from https://drive.google.com/open?id=1raU0m3zA52dh5ayQc3kB-7Ddusa0lOT-). If you would like to use other pretrained models please download it and move it to **models/pretrained** before run ``python train.py``. 
 	5) Open the train.py in the Colab and start training.
 	6) To evaluate the test dataset of Attention learning model, just run ``python test.py``. The ``model_path`` in ``test.py`` relates to the model in the checkpoint file. Pick a trained model you would like to test.
+	7) The well-trained model is too large, so we do not upload the already trained model in ``checkpoint`` folder. Please feel free to contact us, if you would like to have the model we trained in order to replicate the results showing in the notebook.
