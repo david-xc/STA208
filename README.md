@@ -37,11 +37,7 @@ This project mainly utilizes computer vision model to resolve foliar (leaf) dise
 
 ## How to run the code
 
-For the model CNN ResNet50 and Graph convolutional network, the training steps and performances on testset are given in the corresponding jupyter notebooks, you can directly run the notebooks.
-
-For the EfficientNet model, the training steps and performance performances on testset are given seperately in several jupyter notebooks. You can frist run "Training of EfficientNet.ipynb" for training. Then by running "Performance_EfficientNet_Unbalanced.ipynb" and "Performance_EfficientNet_balanced.ipynb", you can see the performances of the EfficientNet trained with balanced and unbalanced dataset respectively.
-
-The attention learning part is a bit more complex. Therefore, we have a independent readme for this part in the folder "code\Attention Learning". That readme can clearly show you how to run the codes of attention learning.
+See the independent readme files in each folder.
 
 
 ## Authors
