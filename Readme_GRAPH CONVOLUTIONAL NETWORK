@@ -1,0 +1,10 @@
+This folder corresponds to Chapter 4 in the report. It includes the notebook which inplement the graph convolutional network and present the performance of it.
+
+## File Directory Description
+
+	* `Resnet_multilabel_graph.ipynb`: Code and explanations about graph neural networks which model the dependencies between different pathology.
+    
+## How to run the code
+
+You only need to run the code on the jupyter notebook. Everything should work fine.
+
