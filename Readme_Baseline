@@ -1,6 +1,3 @@
-# PLANT PATHOLOGY 2021
-
-## Abstract
 This folder includes the implementation notebooks for chapter 3. It has two notebooks which implement the CNN model and ResNet50 model and present the performance of them respectively.
 
 ## File Directory Description
@@ -15,4 +12,6 @@ This folder includes the implementation notebooks for chapter 3. It has two note
 
 You only need to run the code on the jupyter notebooks. Everything should work fine.
 
+## Author
 
+Kaiming Fu
