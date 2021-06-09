@@ -2,7 +2,7 @@ This folder includes the codes and jupyter notebooks of the attention learning (
 
 ## File Directory Description
 
-* `/code/Attention learning/`: This folder contains all the python necessarily to run the Attention learning code in the Colab notebook but please be aware of the ``path`` for loading the dataset and saving the model parameters.
+* `/code/`: This folder contains all the python necessarily to run the Attention learning code in the Colab notebook but please be aware of the ``path`` for loading the dataset and saving the model parameters.
 	
 	* `train.py`: It is the main file to run the Attention learning. 
 
