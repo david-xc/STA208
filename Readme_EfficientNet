@@ -1,4 +1,4 @@
-In the folder, the training steps of EfficientNet and the performance on testset are given seperately in several jupyter notebooks. 
+In the folder, the training steps of EfficientNet (Chapter 5 in the report) and the performance on testset are given seperately in several jupyter notebooks. 
 
 	* `Training of EfficientNet.ipynb`: this is the notebook for the training of the EfficientNet.
     
