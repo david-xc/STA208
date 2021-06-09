@@ -59,3 +59,7 @@ This folder includes the codes and jupyter notebooks of the attention learning (
 	5) Open the train.py in the Colab and start training.
 	6) To evaluate the test dataset of Attention learning model, just run ``python test.py``. The ``model_path`` in ``test.py`` relates to the model in the checkpoint file. Pick a trained model you would like to test.
 	7) The well-trained model is too large, so we do not upload the already trained model in ``checkpoint`` folder. Please feel free to contact us, if you would like to have the model we trained in order to replicate the results showing in the notebook.
+
+## Author
+
+Shing-Jiuan Liu
