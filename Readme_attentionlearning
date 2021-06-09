@@ -1,0 +1,59 @@
+This folder includes the codes and jupyter notebooks of the attention learning (Chapter 6 of the report).
+
+## File Directory Description
+
+* `/code/Attention learning/`: This folder contains all the python necessarily to run the Attention learning code in the Colab notebook but please be aware of the ``path`` for loading the dataset and saving the model parameters.
+	
+	* `train.py`: It is the main file to run the Attention learning. 
+
+	* `config.py`: This file contains the model parameter setting such as batch size, learning rate, input image size. 
+	
+	* `test.py`: This file contains codes for running the testing dataset through an already trained model, which is saved under the "checkpoint" file. Please change the path of ``root`` for dataset location and ``pth_path`` for well trained mode location.
+		    
+	* AOLM.py`: Attention Object Location Module (AOLM). This function crops the whole image to the smaller size image based on the higher score of the feature map
+    
+	* `auto_load_resume.py`: This function loads the model from the checkpoint for training and testing respectively. We can continuously train the model based on what is already trained if the training is forced to stop.
+	
+	* `cal_iou.py`: This function calculates the threshold of activation mean value.	
+	
+	* `compute_window_nums.py`: This function compute how many windows are considered for sliding window approach. It is based on the image input size, stride, and the ratio size of the window
+	
+	* `eval_model.py`: This function evaluates the training model. The input will be training/testing data and the output will be the F1 score 
+	
+	* `indices2coordinates.py`: This function computes the coordination of four parts of images that are clipped from the Object image
+	
+	* `read_dataset.py`: This function tells the user that the code is loading the training data or tje testing data or the data is not successfully loaded.
+	
+	* `train_model.py`: This function is the integration of the training process and the evaluation of the testing dataset
+	
+	* `model.py`: this function is the integration of three main parts of the attention learning: 1) The pretrained ResNet-50; 2) crop the full input images to smaller size images (Objective image) based on the scores of the feature map (AOLM: Attention Object Location Module); 3) the function for further cropping the Objective image to four smaller parts of images. (APPM: Attention Part Proposal Module)	
+	
+	* `resnet.py`: This function is for building the ResNet-50.	
+	
+	
+* `/notebooks/`: 
+
+	* `Unbalance sample_Attentionlearning.ipynb`: this is the notebook for the multi-lable  classification problem to classify unbalanced sample through the Attention learning. It shows the process and results of running the "test.py" where the trained model is save in checkpoint
+    
+	* `Balance sample_Resampling_Attentionlearning.ipynb`: this is the notebook for the multi-lable  classification problem to classify the balanced sample (augmenting by Data Sampler) through the Attention learning.
+
+## How to run the code
+
+* Attention learning.
+	## Requirements
+		- python 3.7
+		- pytorch 1.3.1
+		- numpy 1.17.3
+		- scikit-image 0.16.2
+		- Tensorboard 1.15.0 
+		- TensorboardX 2.0
+		- tqdm 4.41.1
+		- imageio 2.6.1
+		- pillow 6.1.0
+        ** Because the dataset is large so the images are stored in the google drive and the code links Colab to the google drive
+	1)  Please move the training images to the ``images`` folder and also move the train.txt and text.txt under the same path of the ``images folder`` in the google drive.
+	2)  Please be cautious about the path in ``train.py``, ``config.py``, and “dataset.py``. Make sure to correctly copy and paste the path of the images and train/test labels (train.txt and text.txt file). 
+	3) This code will save the model of each epoch to the "checkpoint" folder, where the path is set by the ``model_path`` in the ``config.py``
+	4) The attention learning is based on the pretrained model of ResNet-50 ( you can download from https://drive.google.com/open?id=1raU0m3zA52dh5ayQc3kB-7Ddusa0lOT-). If you would like to use other pretrained models please download it and move it to **models/pretrained** before run ``python train.py``. 
+	5) Open the train.py in the Colab and start training.
+	6) To evaluate the test dataset of Attention learning model, just run ``python test.py``. The ``model_path`` in ``test.py`` relates to the model in the checkpoint file. Pick a trained model you would like to test.
