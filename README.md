@@ -77,7 +77,7 @@ This project mainly utilizes computer vision model to resolve foliar (leaf) dise
 
 Each folder includes the code or notebooks of the corresponding section in the report. See the independent readme files in each folder. Follow the readme, you can successfully run the code or notebooks for any section.
 
-**Note**: Since the pre-trained weights are much larger than 100Mb, so we do not include the checkpoint or saved model for all the neural networks of the project. If you need the well-trained model, please contact us (xcma@ucdavis.edu).
+**Note**: Since the well-trained weights are much larger than 100Mb, so we do not include the checkpoint or saved model for all the neural networks of the project. If you need the well-trained model, please contact us (xcma@ucdavis.edu).
 
 
 ## Authors
