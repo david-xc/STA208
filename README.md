@@ -12,10 +12,8 @@ This project mainly utilizes a computer vision model to resolve foliar (leaf) di
 * `/code and notebooks/`:
 	* `/Data preprocessing(Section 2)/`: this folder contains all code and notebooks of Section 2.
 
-		* `CNN.ipynb`: this is the notebook for the code and explanations about CNN model(baseline 1).
+		* `data_preprocessing.ipynb`: this is the notebook for the code and explanations about data processing.
 
-		* `ResNet.ipynb`: this is the notebook for the code and explanations about ResNet50 model(baseline 2).
-		* 
 	* `/Baseline(Section 3)/`: this folder contains all code and notebooks of Section 2.
 
 		* `CNN.ipynb`: this is the notebook for the code and explanations about CNN model(baseline 1).
@@ -71,12 +69,10 @@ This project mainly utilizes a computer vision model to resolve foliar (leaf) di
 
 			* `Balance sample_Resampling_Attentionlearning.ipynb`: this is the notebook for the multi-lable  classification problem to classify the balanced sample (augmenting by Data Sampler) through the Attention learning.
 
-	* `/Generative data augmentation(Section 7)/`: this folder contains all code and notebooks of Section 2.
+	* `/Generative data augmentation(Section 7)/`: this folder contains all code and notebooks of (Section 7).
 
-		* `CNN.ipynb`: this is the notebook for the code and explanations about CNN model(baseline 1).
+		* `generative_data_augmentation.ipynb`: this is the notebook for the code and explanations about generative data augmentation.
 
-		* `ResNet.ipynb`: this is the notebook for the code and explanations about ResNet50 model(baseline 2).
-		* 
 * `/data/`: The data we used in this project is on the website "https://www.kaggle.com/c/plant-pathology-2021-fgvc8/data". Since it is larger than 100Mb, we do not include it here. Here we only give a introduction of the dataset we use in this project.
 
 	* `Data.pdf`: this file contains a introduction of the data set we use in this project.
