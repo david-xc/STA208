@@ -84,12 +84,9 @@ Each folder includes the code or notebooks of the corresponding section in the r
 
 **Note**: Since the well-trained weights are much larger than 100Mb, so we do not include the checkpoint or saved model for all the neural networks of the project. If you need the well-trained model, please contact us (xcma@ucdavis.edu).
 
-## Data source
-The data we used in this project is on the website "https://www.kaggle.com/c/plant-pathology-2021-fgvc8/data". Since it is larger than 100Mb, we do not put it here due 	to the limit of space.
 ## Authors
 
 Kangning Zhang, Xiaochuan Ma, Shing-Jiuan Liu, Yulu Jin, Kaiming Fu
 
-
-## Data Source:
-https://www.kaggle.com/c/plant-pathology-2021-fgvc8/data
+## Data source
+The data we used in this project is on the website "https://www.kaggle.com/c/plant-pathology-2021-fgvc8/data". Since it is larger than 100Mb, we do not put it here due 	to the limit of space.
