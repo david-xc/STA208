@@ -9,7 +9,12 @@ This project mainly utilizes computer vision model to resolve foliar (leaf) dise
 * We recommend open `report.pdf` first and check the code or notebooks section by section. Every section in the report introduces a model for fine-grained classification or a data process step. These sections are quite independent and some of them are relatively complicated. To make the project easier to understand, the code and notebooks of each section are saved in a folder with the name of the section. In each folder of a section, an independent readme is given to introduce the code and jupyter notebook files in this folder and show you how to run them.
 
 ## File Directory Description
-
+* `/Data preprocessing(Section 2)/`: this folder contains all code and notebooks of Section 2.
+	
+	* `CNN.ipynb`: this is the notebook for the code and explanations about CNN model(baseline 1).
+    
+	* `ResNet.ipynb`: this is the notebook for the code and explanations about ResNet50 model(baseline 2).
+	* 
 * `/Baseline(Section 3)/`: this folder contains all code and notebooks of Section 2.
 	
 	* `CNN.ipynb`: this is the notebook for the code and explanations about CNN model(baseline 1).
@@ -65,6 +70,11 @@ This project mainly utilizes computer vision model to resolve foliar (leaf) dise
 
 		* `Balance sample_Resampling_Attentionlearning.ipynb`: this is the notebook for the multi-lable  classification problem to classify the balanced sample (augmenting by Data Sampler) through the Attention learning.
 
+* `/Generative data augmentation(Section 7)/`: this folder contains all code and notebooks of Section 2.
+	
+	* `CNN.ipynb`: this is the notebook for the code and explanations about CNN model(baseline 1).
+    
+	* `ResNet.ipynb`: this is the notebook for the code and explanations about ResNet50 model(baseline 2).
 
 
 * `/data/`: this folder stores all data files.
