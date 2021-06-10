@@ -77,7 +77,7 @@ This project mainly utilizes a computer vision model to resolve foliar (leaf) di
 
 		* `ResNet.ipynb`: this is the notebook for the code and explanations about ResNet50 model(baseline 2).
 		* 
-* `/data/`: The data we used in this project is on the website "https://www.kaggle.com/c/plant-pathology-2021-fgvc8/data". Since it is larger than 100Mb, we do not put it here due to the limit of space. Here we only give a introduction of the dataset we use in this project.
+* `/data/`: The data we used in this project is on the website "https://www.kaggle.com/c/plant-pathology-2021-fgvc8/data". Since it is larger than 100Mb, we do not include it here. Here we only give a introduction of the dataset we use in this project.
 
 	* `Data.pdf`: this file contains a introduction of the data set we use in this project.
 
