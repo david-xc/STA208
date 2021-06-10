@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This project mainly utilizes computer vision model to resolve foliar (leaf) diseases which poses a major threat to the overall productivity and quality of apple orchards. The anticipated issues is post on the challenge of Plant Pathology 2021 - FGVC8, and is regarded as a fine-grain classification problem. In this report, we demonstrate a series of exploration including data preprocessing, data augmentation and comparison among various state-of-the-art deep learning algorithm. We get a conclusion that attention learning with generative data augmentation will lead to an outstanding performance.
+This project mainly utilizes a computer vision model to resolve foliar (leaf) diseases that pose a major threat to the overall productivity and quality of apple orchards. The anticipated issues are posted on the challenge of Plant Pathology 2021 - FGVC8, and are regarded as a fine-grain classification problem. In this report, we demonstrate a series of exploration including data preprocessing, data augmentation, and comparison among various state-of-the-art deep learning algorithms. We get the conclusion that attention learning with generative data augmentation will lead to an outstanding performance.
 
 ## How to read this project?
 
